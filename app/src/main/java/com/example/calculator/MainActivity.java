@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, "Ошибка", Toast.LENGTH_LONG).show();
             }
         } else if (v.getId() == R.id.buttonRoot) {
-            if (inputText.length() == 0 || !".-+/*√".contains(inputText.substring(inputText.length() - 1)))
+            if (inputText.length() == 0 || ".-+/*√".contains(inputText.substring(inputText.length() - 1)))
                 inputEdit.setText(inputText + "√");
         } else if (v.getId() == R.id.buttonSubtract) {
             if (inputText.length() != 0 && !".-+/*√".contains(inputText.substring(inputText.length() - 1)))
